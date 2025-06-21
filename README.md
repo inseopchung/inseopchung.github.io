@@ -1,1 +1,1 @@
-This is the source code to Inseop Chung's public academic website: https://inseopchung.github.io/.
+This is the source code to Inseop Chung's public website: https://inseopchung.github.io/.
