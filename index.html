@@ -142,6 +142,45 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <tr onmouseout="kappa_stop()" onmouseover="kappa_start()">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='kappa_image'><img src='images/kappa.png' width="160"></div>
+                    <img src='images/kappa.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function kappa_start() {
+                      document.getElementById('kappa_image').style.opacity = "1";
+                    }
+
+                    function kappa_stop() {
+                      document.getElementById('kappa_image').style.opacity = "0";
+                    }
+                    kappa_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <span class="papertitle">KAPPA(κ): Keyframe-Anchored Predictive Policy for
+                    Vision-Language-Action</span>
+                  <br>
+                  Jiwon Lee*,
+                  <strong>Inseop Chung</strong>*,
+                  Sujin Jang†,
+                  Jun Won Choi†
+                  <br>
+                  <em>Preprint</em>
+                  <br>
+                  <p></p>
+                  <p>
+                    KAPPA predicts a latent representation of the next keyframe as a future visual milestone and
+                    conditions each action chunk on this prediction, anchoring continuous control to a sparse sequence
+                    of task-critical milestones. It achieves 98.4% overall success (96.9% on long-horizon tasks) on
+                    LIBERO and 57.3% on RoboCasa atomic tasks, with real-robot gains of +5.0% and +17.5% for
+                    in-distribution and out-of-distribution settings, respectively.
+                  </p>
+                </td>
+              </tr>
+
               <tr onmouseout="hvla_stop()" onmouseover="hvla_start()">
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <div class="one">
